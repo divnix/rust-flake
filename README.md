@@ -1,13 +1,14 @@
 # Standard, and Nix and Rust, oh my!
 
-This template uses Nix to to create a sane development shell for Rust
-projects, Standard for keeping your Nix code well organized, Fenix for
-pulling the latest rust binaries via Nix, and Crane for building Rust
-project in Nix incrementally, making quite iteration a breeze.
+This template uses [Nix][nix] to create a sane development shell for
+Rust projects, [Standard][std] for keeping your Nix code well organized,
+[Fenix][fenix] for pulling the latest rust binaries via Nix, and
+[Crane][crane] for building Rust projects in Nix incrementally, making
+quick iteration a breeze.
 
-Rust analyzer is wired up with the proper variables for immediate use
-from a terminal based editor with language server support. Need a good
-one for Nix and Rust? Try Helix! 
+Rust Analyzer is also wired up properly for immediate use from a
+terminal based editor with language server support. Need one with
+stellar Nix and Rust support? Try [Helix][helix]!
 
 ## Bootstrap
 
@@ -28,4 +29,10 @@ g commit -m "init"
 
 # enter the devshell
 direnv allow || nix develop
-``` 
+```
+
+[std]: https://github.com/divnix/std#readme
+[nix]: https://nixos.org
+[fenix]: https://github.com/nix-community/fenix#readme
+[crane]: https://github.com/ipetkov/crane#readme
+[helix]: https://github.com/helix-editor/helix#readme
